@@ -1,4 +1,3 @@
-
 %macro write_number 2
       push eax
       push edx

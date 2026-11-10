@@ -1,0 +1,9 @@
+nasm -f elf -o program.o program.asm
+gcc -no-pie -m32 program.o -o program
+./program
+
+USING _START:
+---------------
+
+nasm -f elf32 -o program.o program.asm
+gcc -m32 -o program program.o -nostartfiles -no-pie -lc
